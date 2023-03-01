@@ -1,11 +1,11 @@
-BUILD_DIR="./build"
+BUILD_DIR="./student-submission-build"
 SOURCE_DIR="./student-submission"
 SOURCE_FILE="ListExamples.java"
 TEST="TestListExamples"
 
-CPATH_UNIX=".:./lib/*:$BUILD_DIR"
-CPATH_WIN=".;./lib/*;$BUILD_DIR"
-CPATH="$CPATH_UNIX:;$CPATH_WIN"
+CPATH_UNIX=":.:./lib/*:$BUILD_DIR:"
+CPATH_WIN=";.;./lib/*;$BUILD_DIR;"
+CPATH="$CPATH_UNIX$CPATH_WIN"
 
 function cleanup()
 {
